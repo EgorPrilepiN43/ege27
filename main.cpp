@@ -1,4 +1,5 @@
 #include <iostream>
+#include <vector>
 
 using namespace std;
 
@@ -11,6 +12,14 @@ void numbers_of_products_div()
     4. Вывести пары, произведение кторых равны 22
     5. Только коллличество пар
     */
+
+    int n(0);
+    cin >> n;
+    vector<int> numbers (n, 0);
+    for (int i(0); i<n; i++)
+        cin>>numbers[i];
+    for (int i(0); i<n; i++)
+        cout<<numbers[i]<<" ";
 }
 int main()
 {
