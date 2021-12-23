@@ -6,9 +6,9 @@ using namespace std;
 void num_sum_itog_ineff()
 {
     /*
-    ++1. Ââîäèì è âûâîäèì ÷èñëà ïðàâèëüíî, ñîãëàñíî óñëîâèþ
-    ++2. Öèêëàìè ïåðåáåðàåì òðîéêè, êîòîðûå ïîäõîäÿò ïîä óñëîâèå
-    ++3. Âûâîäèì îòâåòû!
+    ++1. Ã‚Ã¢Ã®Ã¤Ã¨Ã¬ Ã¨ Ã¢Ã»Ã¢Ã®Ã¤Ã¨Ã¬ Ã·Ã¨Ã±Ã«Ã  Ã¯Ã°Ã Ã¢Ã¨Ã«Ã¼Ã­Ã®, Ã±Ã®Ã£Ã«Ã Ã±Ã­Ã® Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¾
+    ++2. Ã–Ã¨ÃªÃ«Ã Ã¬Ã¨ Ã¯Ã¥Ã°Ã¥Ã¡Ã¥Ã°Ã Ã¥Ã¬ Ã²Ã°Ã®Ã©ÃªÃ¨, ÃªÃ®Ã²Ã®Ã°Ã»Ã¥ Ã¯Ã®Ã¤ÃµÃ®Ã¤Ã¿Ã² Ã¯Ã®Ã¤ Ã³Ã±Ã«Ã®Ã¢Ã¨Ã¥
+    ++3. Ã‚Ã»Ã¢Ã®Ã¤Ã¨Ã¬ Ã®Ã²Ã¢Ã¥Ã²Ã»!
     */
     int n(0);
     cin >> n;
@@ -24,7 +24,7 @@ void num_sum_itog_ineff()
         for (int i(j+1); i<n-1;i++)
             for (int a(i+1); a<n;a++)
             {
-                if ((numbers[i]+numbers[j]+numbers[a])%4==0 and (numbers[i]+numbers[j]+numbers[a])<res)
+                if ((numbers[i]*numbers[j]*numbers[a])%4==0 and (numbers[i]*numbers[j]*numbers[a])<res)
                 {
                     res=numbers[i]+numbers[j]+numbers[a];
                     cnt++;
