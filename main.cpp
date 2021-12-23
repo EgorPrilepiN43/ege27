@@ -5,12 +5,10 @@ using namespace std;
 
 void num_sum_itog_ineff()
 {
-
     /*
     ++1. Вводим и выводим числа правильно, согласно условию
     ++2. Циклами перебераем тройки, которые подходят под условие
-    3.
-
+    ++3. Выводим ответы!
     */
     int n(0);
     cin >> n;
@@ -28,12 +26,14 @@ void num_sum_itog_ineff()
             {
                 if ((numbers[i]+numbers[j]+numbers[a])%4==0 and (numbers[i]+numbers[j]+numbers[a])<res)
                 {
-                    cout<<numbers[j]<<" "<<numbers[i]<<" "<<numbers[a]<<" "<< endl;
                     res=numbers[i]+numbers[j]+numbers[a];
                     cnt++;
-
-
                 }
+                if ((numbers[i]+numbers[j]+numbers[a])==res)
+                    cout<<numbers[j]<<" "<<numbers[i]<<" "<<numbers[a]<<" "<< endl;
+            }
+    cout<<res<<endl;
+    cout<<cnt<<endl;
 }
 int main()
 {
