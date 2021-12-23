@@ -24,7 +24,7 @@ void num_sum_itog_ineff()
         for (int i(j+1); i<n-1;i++)
             for (int a(i+1); a<n;a++)
             {
-                if ((numbers[i]*numbers[j]*numbers[a])%4==0 and (numbers[i]*numbers[j]*numbers[a])<res)
+                if ((numbers[i]*numbers[j]*numbers[a])%4==0 and (numbers[i]*numbers[j]*numbers[a])>res)
                 {
                     res=numbers[i]+numbers[j]+numbers[a];
                     cnt++;
